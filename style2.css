@@ -1,0 +1,477 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Style*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+body {
+	
+	font-family: 'Quicksand', sans-serif;
+	line-height: 25px;
+	background-color: #eaeaea;
+	background-image: url(sativa.png);
+	color: #333;
+	padding: 20px;
+}
+
+.top-bar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 40px;
+	background-color: lightskyblue;
+	border-bottom: 3px solid salmon;
+	z-index: 9999;
+
+}
+
+.container {
+	width: 1100px;
+	margin: 80px auto;
+	overflow: hidden;
+	background-color: #fff;
+	position: relative;
+}
+
+
+.header{
+		width: 1150px;
+		background-image: url(image/mountain.png);
+		background-repeat: no-repeat;
+		margin: 18px ;
+		background-size: 5%;
+		background-position-y: 20%;
+		padding: 20px;
+}
+.icon {
+	float: right;
+	width: 250px;
+	font-size: 25px;
+	color: #00a2c6;
+}
+
+.icon i:hover{
+	font-weight: bold;
+	font-size: 30px;
+	color: #00a2c6;
+}
+
+main p{
+	text-align: justify;
+ }
+ .artikelterbaru a{
+	text-decoration: none;
+	color: steelblue;
+	padding: 7px;
+	margin-bottom: 10px;
+  }
+  .artikelterbaru a:hover {
+	font-weight: bold;
+ }
+ 
+  .featured-image {
+	 width: 100%;
+	 max-height: 500px;
+	 object-fit: cover;
+	 object-position: center;
+	
+  }
+.header .judul{
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 3px;
+	color: #00a2c6;
+}
+h2 a{
+	color: #00a2c6;
+	text-decoration: none;
+ }
+.penulis {
+   padding-top: 10px;
+}
+
+
+.topnav ul li{
+	display: inline-block;
+}
+
+.topnav li a:link{
+	display: block;
+	min-width: 140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	 color: white;
+	text-decoration: none;
+	/*border-right: 1px solid #eaeaea;*/
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+ }
+ nav a:hover {
+    font-weight: bold;
+ }
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+ }
+
+.lanjutan {
+	text-align: right;
+}
+
+ .lanjutan a{
+	background-color: #00a2c6;	
+    	font-size: 14px;
+	padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	text-decoration: none;
+	color: white;
+	border-radius: 10px;
+   
+ }
+ .lanjutan a:visited{
+	color: white;
+ }
+ .lanjutan a:hover {
+	 background-color: darkturquoise;
+    font-weight: bold;
+ }
+ .aktif {
+	font-weight: bold;
+ }
+
+ nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+ }
+ nav {
+    background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+ }
+.jumbotron {
+	background-image: url('image/jumbotron.jpg');
+	
+	background-position: 0-300px;
+	background-size: cover;
+	 font-size: 20px;
+	 padding: 110px;
+	 /* border-bottom: 5px solid lightskyblue; */
+	 border-top: 5px solid salmon;
+	 text-align: center;
+	 color: white;
+  }
+  .jumbotron h1 {
+	  font-size: 2em;
+	  font-weight: 400px;
+  }
+  .jumbotron p {
+	  padding-top: 30px;
+	  color: -internal-root-color;
+  }
+
+.hero img {
+	display: block;
+}
+/* 
+.topnav {
+	background-color: #333333;
+} */
+.main {
+	width: 755px;
+	padding: 20px;
+	box-sizing: border-box;
+	float: left;
+}
+
+.main h2{
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.main .penulis{
+	font-size: 11px;
+	margin-top: -5px;
+}
+
+.main .penulis a{
+	color:  #07c600;
+	text-decoration: none;
+}
+
+.main p{
+	margin-bottom: 20px;
+	font-size: 16px;
+	text-align: justify;
+}
+
+.sidebar{
+	width: 300px;
+	float: right;
+	padding: 20px;
+	/*border: 1px solid lightskyblue;*/
+}
+
+.kartu {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    padding: 15px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+ }
+.about h3{
+	color: #00a2c6;
+	text-align: center;
+	font-weight: bold;
+	font-size: 24px;
+	margin-top: 20px;
+	padding-bottom: 10px;
+
+}
+
+.about img{
+	width: 130px;
+	height: 130px;
+	border-radius: 100%;
+	border: 3px solid  #00a2c6;
+	
+}
+
+.about {
+	text-align: center;
+}
+.about p{
+	font-size: 14px;
+	font-family: 'Quicksand', sans-serif;
+	text-align: justify;
+	display: block;
+
+}
+
+.artikelterbaru h3{
+	color: #00a2c6;
+	
+	font-weight: bold;
+	font-size: 18px;
+
+	padding-bottom: 10px;
+}
+.img_terbaru {
+	padding-top: 7px;
+	width: 95%;
+	border-radius: 10%;
+	 max-height: 150px;
+	 object-fit: cover;
+	 display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+}
+.artikelterbaru p{
+	padding-top: 3px;
+	text-align: justify;
+	font-size: small;
+	display: block;
+	padding-bottom: 10px;
+}
+.artikelterbaru {
+	margin-bottom: 20px;
+}
+
+
+.terbaru a{
+	color: #0071fd;
+	font-size: 12px;
+}
+
+.artikelterbaru tr  a:visited {
+	
+	color: orangered;
+}
+
+.footer {
+	padding: 20px;
+	color: white;
+	background-color: #00a2c6;
+	text-align: center;
+	font-weight: bold;
+ }
+
+.footer .copy{
+	color: #eaeaea;
+	text-align: center;
+	font-size: 18px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+@media screen and (max-width: 760px) {
+	.container {
+		width: 100%;
+	}
+
+	.header .judul {
+		font-size: 24px;
+		font-weight: bold;
+		margin-left: 12px;
+	}
+
+	.jumbotron {
+		height: 100%;
+		width: auto;
+	background-position: 0px;
+		font-size: 18px;
+		
+	}
+	.jumbotron h1{
+		font-weight: bold;
+		color: #00a2c6;
+		font-size: 23px;
+		text-align: center;
+	}
+	.jumbotron p{
+		color: rgb(41, 100, 189);
+
+		font-weight: 600;
+		font-size: 16px;
+	}
+
+	.main {
+		float: none;
+		width: 100%;
+	}
+
+	.icon {
+		width: 63%;
+	}
+
+	.sidebar {
+		float: none;
+		width: 100%;
+	}
+	
+	.artikelterbaru a{
+	    font-size: 17px;
+	}
+	
+	.artikelterbaru p{
+		width: 77%;
+	}
+	.kartu {
+		width: 78%;
+	}
+
+	ul li, li a {
+		width: 100%;
+
+	}
+
+	body {
+		font-size: 20px;
+	}
+	.img_terbaru {
+		padding-top: 7px;
+		width: 70%;
+		border-radius: 15%;
+		max-height: 250px;
+		object-fit: cover;
+	 	object-position: center;
+		
+	}
+	.main h2{
+		font-size: 20px;
+	}
+
+	.main h3{
+		font-size: 17px;
+	}
+	.terbaru a{
+		font-size: 12px;
+	}
+
+.lanjutan a{
+	background-color: #00a2c6;	
+    	font-size: 14px;
+	padding: 7px 14px;
+ }
+ .copy {
+	 font-size: 14px;
+ }
+}

@@ -1,0 +1,330 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Style*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+body {	
+	font-family: 'Quicksand', sans-serif;
+	line-height: 25px;
+	background-color: #eaeaea;
+	background-image: url(sativa.png);
+	padding: 20px;
+}
+.top-bar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 40px;
+	background-color: lightskyblue;
+	border-bottom: 3px solid salmon;
+	z-index: 9999;
+}
+.container {
+	width: 1000px;
+	margin: 80px auto;
+	overflow: hidden;
+	background-color: #fff;
+	position: relative;
+}
+.header{
+		width: 900px;
+		background-image: url(image/mountain.png);
+		background-repeat: no-repeat;
+		margin: 18px ;
+		background-size: 5%;
+		background-position-y: 20%;
+		padding: 20px;
+}
+.icon {
+	float: right;
+	width: 200px;
+	font-size: 25px;
+	color: #00a2c6;
+}
+.icon i:hover{
+	font-weight: bold;
+	font-size: 30px;
+	color: #00a2c6;
+}
+main p{
+	text-align: justify;
+} 
+.featured-image {
+	margin-right: 18px;
+	float: left;
+	width: 50%;
+	padding-left: 20px;
+	max-height: 400px;
+	object-fit: cover;
+	object-position: center;
+	
+}
+.header .judul{
+	font-size: 33px;
+	font-weight: bold;
+	margin-bottom: 3px;
+	color: #00a2c6;
+}
+.topnav ul li{
+	display: inline-block;
+	
+    list-style-type: none;
+    margin-right: 20px;
+}
+.topnav li a:link{
+	display: block;
+	min-width: 140px;
+	height: 50px;
+	line-height: 50px;
+	 color: white;
+	text-decoration: none;
+}
+.topnav {
+	background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+	top: 0;
+	text-align: center;
+}
+.topnav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+ }
+ .topnav a:hover {
+    font-weight: bold;
+ }
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+	margin-top: 10px;
+ }
+.jumbotron {
+	background-image: url('image/jumbotron.jpg');
+	background-position: 0-250px;
+	background-size: cover;
+	 font-size: 20px;
+	 padding: 110px;
+	 border-top: 5px solid salmon;
+	 text-align: center;
+	 color: white;
+  }
+.jumbotron h1 {
+		font-size: 1.5em;
+		font-weight: 400px;
+		font-weight: bold;
+		color: #00a2c6;
+		text-align: center;
+}
+.jumbotron p {
+	  padding-top: 30px;
+	  color: -internal-root-color;
+}
+.main {
+	padding: 20px;
+	box-sizing: border-box;
+}
+.main h1{
+	font-size: 2em;
+	font-weight: 400px;
+	font-weight: bold;
+	color: #00a2c6;
+	margin-left: 15px;
+}
+.main h5{
+	padding: 7px;
+	margin-left: 10px;
+	font-size: 14px;
+    color: orangered;
+}
+.main h2 {
+	font-family: 'Quicksand', sans-serif;
+	display: block;
+    font-size: 26px;
+    margin-block-start: 0.40em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	font-weight: bold;
+}
+.main li{	
+	color: #00a2c6;
+	font-family: 'Quicksand', sans-serif;
+	margin-left: 20px;
+    font-size: 26px;
+    font-weight: bold;
+}
+.main h3{
+	color: #00a2c6;
+	font-family: 'Quicksand', sans-serif;
+	display: block;
+    font-size: 22px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.main p{
+	margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	font-size: 14px;
+	text-align: justify;
+	padding-left: 20px;
+}
+.kembali {
+	text-align: right;
+}
+
+ .kembali a{
+	background-color: #00a2c6;	
+	font-size: 14px;
+    margin-top: 20px;
+	padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	text-decoration: none;
+	color: white;
+	border-radius: 10px;
+	cursor: pointer;
+ }
+ .kembali a:visited{
+	color: white;
+ }
+ .kembali a:hover {
+	 background-color: darkturquoise;
+    font-weight: bold;
+ }
+
+.footer {
+	padding: 20px;
+	color: white;
+	background-color: #00a2c6;
+	text-align: center;
+	font-weight: bold;
+ }
+.footer .copy{
+	color: #eaeaea;
+	text-align: center;
+	font-size: 18px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+@media screen and (max-width: 760px) {
+	.container {
+		width: 100%;
+	}
+
+	.header .judul {
+		font-size: 17px;
+		font-weight: bold;
+		margin-left: 12px;
+	}
+
+	.jumbotron {
+		height: 100%;
+		width: auto;
+		background-position: 0px;
+		font-size: 18px;
+		
+	}
+	.jumbotron h1{
+		font-weight: bold;
+		color: #00a2c6;
+		font-size: 23px;
+		text-align: center;
+
+	}
+	.jumbotron p{
+		color: rgb(255, 255, 255);
+		font-size: 14px;
+		font-weight: 600;
+		margin-left: 0%;
+		text-align: center;
+	}
+	.main {
+		float: none;
+		width: 100%;
+	}
+	.main h1{
+		font-size: 23px;
+	}
+	.main h2{
+		font-size: 20px;
+	}
+	.main li{
+		font-size: 20px;
+	}
+	.main h3, h5{
+		font-size: 17px;
+	}
+	.icon {
+		width: 67%;
+		font-size: 20px;
+	}
+	ul li, li a {
+		width: 100%;
+	}
+	body {
+		font-size: 20px;
+	}
+	
+}
